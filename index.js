@@ -2,6 +2,6 @@ const express = require('express')
 
 const app = express()
 
-app.listen(3000, () => console.log('Servidor rodando na porta 3000'))
+app.listen(3000, console.log('Olá, você está conectado na porta 3000'))
 
-app.get('/atendimentos', (request, response) => response.send('Você está rota de atendimentos'))
+app.get('/atendimentos', (request, response) => response.send('Você está em atendimentos'))
